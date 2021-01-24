@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sobhy_Kaber_title">Sobhy Kaber Restaurant</string>
+    <string name="sobhy_Kaber_description">Details
+            CUISINES
+            Barbecue, Middle Eastern, Egyptian
+            SPECIAL DIETS
+            Halal
+            MEALS
+            Lunch, Dinner
+            FEATURES
+            Delivery, Takeout, Seating, Wheelchair Accessible, Table Service</string>
+    <string name="kebdet_el_prince_title">Kebdet El Prince Restaurant</string>
+    <string name="kebdet_el_prince_description">Details
+            CUISINES
+            Middle Eastern, Egyptian
+            SPECIAL DIETS
+            Halal
+            MEALS
+            Lunch, Dinner
+            FEATURES
+            Outdoor Seating, Seating, Wheelchair Accessible, Table Service, Takeout</string>
+    <string name="koshary_Abou_ATrek_title">Koshary-Abou-ATrek Restaurant</string>
+    <string name="koshary_Abou_ATrek_description">Details
+            CUISINES
+            Fast Food, Middle Eastern, Egyptian
+            SPECIAL DIETS
+            Vegetarian Friendly, Vegan Options, Halal
+            MEALS
+            Lunch, Dinner, Brunch, Late Night</string>
+    <string name="white_and_blue_title">White and Blue Restaurant</string>
+    <string name="white_and_blue_description">Details
+           CUISINES
+            Seafood, Mediterranean, Greek, Healthy
+            SPECIAL DIETS
+            Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options
+            MEALS
+            Lunch, Dinner, Brunch, Late Night`</string>
+    <string name="el_dokka_title">El Dokka Restaurant</string>
+    <string name="el_dokka_and_blue_description">Details
+           CUISINES
+            Middle Eastern, Egyptian
+            SPECIAL DIETS
+            Vegetarian Friendly, Vegan Options, Halal
+            MEALS
+            Lunch, Dinner, Late Night
+            FEATURES
+            Reservations, Outdoor Seating, Seating, Highchairs Available, Table Service</string>
+    <string name="al_sahaby_lane_title">Al-Sahaby Lane Restaurant</string>
+    <string name="al_sahaby_lane_description">Details
+           CUISINES
+            Mediterranean, Middle Eastern, Egyptian
+            SPECIAL DIETS
+            Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options
+            MEALS
+            Breakfast, Lunch, Dinner, Brunch, Late Night
+</string>
+</resources>
