@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-public class ShoppingFragment extends Fragment  {
+public class ShoppingFragment extends Fragment {
     ArrayList<Places> placesList = new ArrayList<>();
     RecyclerView recyclerView;
 
@@ -33,18 +33,18 @@ public class ShoppingFragment extends Fragment  {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        AdapterPlace adapterPlace=new AdapterPlace(getContext(),placesList);
-        recyclerView=view.findViewById(R.id.recycler_view_shopping);
+        AdapterPlace adapterPlace = new AdapterPlace(getContext(), placesList);
+        recyclerView = view.findViewById(R.id.recycler_view_shopping);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapterPlace);
         setShopping();
     }
 
     private void setShopping() {
-        placesList.add(new Places(R.drawable.mall_of_egypt,R.string.mall_of_egypt_title,R.string.mall_of_egypt_description));
-        placesList.add(new Places(R.drawable.mall_of_arabia_cairo,R.string.mall_of_Arabia_Cairo_title,R.string.mall_of_Arabia_Cairo_description));
-        placesList.add(new Places(R.drawable.khan_elkhalili,R.string.khan_el_khalili_title,R.string.khan_el_khalili_description));
-        placesList.add(new Places(R.drawable.soho_square,R.string.sOHO_Square_title,R.string.sOHO_Square_description));
+        placesList.add(new Places(R.drawable.mall_of_egypt, R.string.mall_of_egypt_title, R.string.mall_of_egypt_description));
+        placesList.add(new Places(R.drawable.mall_of_arabia_cairo, R.string.mall_of_Arabia_Cairo_title, R.string.mall_of_Arabia_Cairo_description));
+        placesList.add(new Places(R.drawable.khan_elkhalili, R.string.khan_el_khalili_title, R.string.khan_el_khalili_description));
+        placesList.add(new Places(R.drawable.soho_square, R.string.sOHO_Square_title, R.string.sOHO_Square_description));
     }
 
 }

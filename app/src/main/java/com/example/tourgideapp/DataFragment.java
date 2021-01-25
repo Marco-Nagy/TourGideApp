@@ -15,9 +15,10 @@ import android.widget.TextView;
 
 
 public class DataFragment extends DialogFragment {
-    ImageView imageData,imageView2;
-    TextView textTitle,textDescription;
+    ImageView imageData, imageView2;
+    TextView textTitle, textDescription;
     Places places;
+
     public DataFragment() {
         // Required empty public constructor
     }
@@ -32,10 +33,10 @@ public class DataFragment extends DialogFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        imageData=view.findViewById(R.id.image_data);
-        imageView2=view.findViewById(R.id.imageView2);
-        textTitle=view.findViewById(R.id.text_title);
-        textDescription=view.findViewById(R.id.text_description);
+        imageData = view.findViewById(R.id.image_data);
+        imageView2 = view.findViewById(R.id.imageView2);
+        textTitle = view.findViewById(R.id.text_title);
+        textDescription = view.findViewById(R.id.text_description);
     }
 
 

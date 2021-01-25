@@ -3,8 +3,8 @@ package com.example.tourgideapp;
 import java.io.Serializable;
 
 public class Places implements Serializable {
-    int imageView,image1,
-            title,description;
+    int imageView, image1,
+            title, description;
 
     public Places(int imageView, int image1, int title, int description) {
         this.imageView = imageView;
