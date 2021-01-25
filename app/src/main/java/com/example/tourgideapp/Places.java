@@ -1,6 +1,8 @@
 package com.example.tourgideapp;
 
-public class Places {
+import java.io.Serializable;
+
+public class Places implements Serializable {
     int imageView,image1,
             title,description;
 
@@ -15,6 +17,10 @@ public class Places {
         this.imageView = imageView;
         this.title = title;
         this.description = description;
+    }
+
+    public Places() {
+
     }
 
     public int getImageView() {
