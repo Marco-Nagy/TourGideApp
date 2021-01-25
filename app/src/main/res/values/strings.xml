@@ -2,6 +2,9 @@
     <string name="app_name">Tour Gide App</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="places">Places</string>
+    <string name="hotels">Hotels</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="shopping">Shopping</string>
     <string name="title_activity_data">DataActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

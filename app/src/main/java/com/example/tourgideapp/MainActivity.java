@@ -34,15 +34,15 @@ public class MainActivity extends AppCompatActivity {
                        tab.setIcon(R.drawable.ic_places);
                        break;
                    case 1:
-                       tab.setText("Hotels");
+                       tab.setText(R.string.hotels);
                        tab.setIcon(R.drawable.hotel);
                        break;
                    case 2:
-                       tab.setText("Restaurants");
+                       tab.setText(R.string.restaurants);
                        tab.setIcon(R.drawable.food);
                        break;
                    case 3:
-                       tab.setText("Shopping");
+                       tab.setText(R.string.shopping);
                        tab.setIcon(R.drawable.shopping_bag);
                        break;
                }

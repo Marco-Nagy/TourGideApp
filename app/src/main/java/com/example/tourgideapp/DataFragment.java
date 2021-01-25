@@ -36,15 +36,6 @@ public class DataFragment extends DialogFragment {
         imageView2=view.findViewById(R.id.imageView2);
         textTitle=view.findViewById(R.id.text_title);
         textDescription=view.findViewById(R.id.text_description);
-//    PlaceIn placeIn= new PlaceIn() {
-//    @Override
-//    public void ViewData(Places places) {
-//        imageData.setImageResource(places.getImageView());
-//        textTitle.setText(places.getTitle());
-//        textDescription.setText(places.getDescription());
-//        imageView2.setImageResource(places.getImage1());
-//    }
-//};
     }
 
 
