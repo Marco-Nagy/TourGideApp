@@ -10,11 +10,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class DataFragment extends DialogFragment {
-
-
+    ImageView imageData,imageView2;
+    TextView textTitle,textDescription;
+    Places places;
     public DataFragment() {
         // Required empty public constructor
     }
@@ -29,5 +32,20 @@ public class DataFragment extends DialogFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        imageData=view.findViewById(R.id.image_data);
+        imageView2=view.findViewById(R.id.imageView2);
+        textTitle=view.findViewById(R.id.text_title);
+        textDescription=view.findViewById(R.id.text_description);
+//    PlaceIn placeIn= new PlaceIn() {
+//    @Override
+//    public void ViewData(Places places) {
+//        imageData.setImageResource(places.getImageView());
+//        textTitle.setText(places.getTitle());
+//        textDescription.setText(places.getDescription());
+//        imageView2.setImageResource(places.getImage1());
+//    }
+//};
     }
+
+
 }

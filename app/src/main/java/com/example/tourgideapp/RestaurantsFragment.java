@@ -15,10 +15,9 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 
-public class RestaurantsFragment extends Fragment implements PlaceIn {
+public class RestaurantsFragment extends Fragment {
     ArrayList<Places> placesList = new ArrayList<>();
     RecyclerView recyclerView;
-    PlaceIn placeIn;
 
     public RestaurantsFragment() {
         // Required empty public constructor
@@ -34,7 +33,7 @@ public class RestaurantsFragment extends Fragment implements PlaceIn {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        AdapterPlace adapterPlace = new AdapterPlace(getContext(), placesList, placeIn);
+        AdapterPlace adapterPlace = new AdapterPlace(getContext(), placesList);
         recyclerView = view.findViewById(R.id.recycler_view_restaurants);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapterPlace);
@@ -50,10 +49,4 @@ public class RestaurantsFragment extends Fragment implements PlaceIn {
         placesList.add(new Places(R.drawable.al_sahaby_lane_restaurant, R.drawable.alsahaby_lane, R.string.al_sahaby_lane_title, R.string.al_sahaby_lane_description));
     }
 
-    @Override
-    public void ViewData(Places places) {
-        if (getActivity() instanceof MainActivity) {
-            ((MainActivity)getActivity()).Data(places);
-        }
-    }
 }

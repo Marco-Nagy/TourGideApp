@@ -14,9 +14,8 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-public class HotelsFragment extends Fragment implements PlaceIn {
+public class HotelsFragment extends Fragment {
     RecyclerView recyclerView;
-    PlaceIn placeIn;
     ArrayList<Places> placesList = new ArrayList<>();
 
 
@@ -30,7 +29,7 @@ public class HotelsFragment extends Fragment implements PlaceIn {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        AdapterPlace adapterPlace = new AdapterPlace(getContext(), placesList, placeIn);
+        AdapterPlace adapterPlace = new AdapterPlace(getContext(), placesList);
         recyclerView = view.findViewById(R.id.recycler_view_hotels);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapterPlace);
@@ -48,12 +47,4 @@ public class HotelsFragment extends Fragment implements PlaceIn {
 
 
 
-
-
-    @Override
-    public void ViewData(Places places) {
-        if (getActivity() instanceof MainActivity) {
-            ((MainActivity)getActivity()).Data(places);
-        }
-    }
 }

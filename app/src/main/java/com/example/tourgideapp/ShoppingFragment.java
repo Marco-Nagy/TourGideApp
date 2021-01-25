@@ -14,10 +14,9 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-public class ShoppingFragment extends Fragment implements PlaceIn {
+public class ShoppingFragment extends Fragment  {
     ArrayList<Places> placesList = new ArrayList<>();
     RecyclerView recyclerView;
-    PlaceIn placeIn;
 
     public ShoppingFragment() {
         // Required empty public constructor
@@ -34,7 +33,7 @@ public class ShoppingFragment extends Fragment implements PlaceIn {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        AdapterPlace adapterPlace=new AdapterPlace(getContext(),placesList,placeIn);
+        AdapterPlace adapterPlace=new AdapterPlace(getContext(),placesList);
         recyclerView=view.findViewById(R.id.recycler_view_shopping);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapterPlace);
@@ -48,11 +47,4 @@ public class ShoppingFragment extends Fragment implements PlaceIn {
         placesList.add(new Places(R.drawable.soho_square,R.string.sOHO_Square_title,R.string.sOHO_Square_description));
     }
 
-
-    @Override
-    public void ViewData(Places places) {
-        if (getActivity() instanceof MainActivity) {
-            ((MainActivity)getActivity()).Data(places);
-        }
-    }
 }

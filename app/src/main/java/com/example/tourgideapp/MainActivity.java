@@ -49,25 +49,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         tabLayoutMediator.attach();
-
     }
-    public void Data(Places places){
-        if(places==null)return;
-        imageData.setImageResource(places.getImageView());
-        textTitle.setText(places.getTitle());
-        textDescription.setText(places.getDescription());
-        imageView2.setImageResource(places.getImage1());
-
-    }
-    PlaceIn placeIn =new PlaceIn() {
-        @Override
-        public void ViewData(Places places) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .add(new  DataFragment(),"DataFragment")
-                    .commit();
-        }
-    };
-
 
 }
